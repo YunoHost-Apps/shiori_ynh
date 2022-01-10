@@ -9,13 +9,14 @@
     "version": "1.5.0~ynh1",
     "url": "https://example.com",
     "upstream": {
-        "license": "free",
+        "license": "MIT",
         "website": "https://example.com",
         "demo": "https://demo.example.com",
-        "admindoc": "https://yunohost.org/packaging_apps",
+        "admindoc": "https://github.com/go-shiori/shiori/wiki",
+        "userdoc": "https://github.com/go-shiori/shiori/wiki/Usage",
         "code": "https://github.com/go-shiori/shiori"
     },
-    "license": "free",
+    "license": "MIT",
     "maintainer": {
         "name": "John doe",
         "email": "john.doe@example.com"
