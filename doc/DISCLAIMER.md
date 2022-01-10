@@ -1,2 +1,2 @@
-username: shiori
-password: gopher
+- username: `shiori`
+- password: `gopher`
