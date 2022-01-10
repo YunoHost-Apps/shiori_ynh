@@ -17,7 +17,6 @@ ynh_script_progression --message="Loading installation settings..." --weight=1
 app=$YNH_APP_INSTANCE_NAME
 
 domain=$(ynh_app_setting_get --app=$app --key=domain)
-port=$(ynh_app_setting_get --app=$app --key=port)
 db_name=$(ynh_app_setting_get --app=$app --key=db_name)
 db_user=$db_name
 final_path=$(ynh_app_setting_get --app=$app --key=final_path)
@@ -48,6 +47,8 @@ ynh_remove_systemd_config
 # REMOVE LOGROTATE CONFIGURATION
 #=================================================
 ynh_script_progression --message="Removing logrotate configuration..." --weight=1
+
+ynh_secure_remove --file="/var/log/$app"
 
 # Remove the app-specific logrotate config
 ynh_remove_logrotate
