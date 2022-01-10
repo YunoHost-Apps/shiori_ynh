@@ -1,15 +1,11 @@
 ;; Test complet
 	; Manifest
 		domain="domain.tld"
-		path="/path"
-		admin="john"
-		language="fr"
+		path="/"
 		is_public=1
-		password="1Strong-Password"
-		port="666"
 	; Checks
 		pkg_linter=1
-		setup_sub_dir=1
+		setup_sub_dir=0
 		setup_root=1
 		setup_nourl=0
 		setup_private=1
