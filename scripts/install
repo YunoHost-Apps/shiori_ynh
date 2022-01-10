@@ -57,13 +57,6 @@ port=$(ynh_find_port --port=8095)
 ynh_app_setting_set --app=$app --key=port --value=$port
 
 #=================================================
-# INSTALL DEPENDENCIES
-#=================================================
-ynh_script_progression --message="Installing dependencies..." --weight=3
-
-ynh_install_app_dependencies $pkg_dependencies
-
-#=================================================
 # CREATE DEDICATED USER
 #=================================================
 ynh_script_progression --message="Configuring system user..." --weight=1
@@ -144,6 +137,11 @@ ynh_script_progression --message="Configuring log rotation..." --weight=1
 
 # Use logrotate to manage application logfile(s)
 ynh_use_logrotate
+
+# Create log directory
+mkdir -p /var/log/$app
+touch /var/log/$app/$app.log
+chown $app -R /var/log/$app
 
 #=================================================
 # INTEGRATE SERVICE IN YUNOHOST
