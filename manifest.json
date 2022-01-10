@@ -7,10 +7,10 @@
         "fr": "Simple bookmark manager built with Go"
     },
     "version": "1.5.0~ynh1",
-    "url": "https://example.com",
+    "url": "https://github.com/go-shiori/shiori",
     "upstream": {
         "license": "MIT",
-        "website": "https://example.com",
+        "website": "https://github.com/go-shiori/shiori",
         "demo": "https://demo.example.com",
         "admindoc": "https://github.com/go-shiori/shiori/wiki",
         "userdoc": "https://github.com/go-shiori/shiori/wiki/Usage",
