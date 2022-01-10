@@ -20,7 +20,6 @@ domain=$(ynh_app_setting_get --app=$app --key=domain)
 db_name=$(ynh_app_setting_get --app=$app --key=db_name)
 db_user=$db_name
 final_path=$(ynh_app_setting_get --app=$app --key=final_path)
-datadir=$(ynh_app_setting_get --app=$app --key=datadir)
 
 #=================================================
 # STANDARD REMOVE
@@ -68,14 +67,6 @@ ynh_script_progression --message="Removing app main directory..." --weight=1
 
 # Remove the app directory securely
 ynh_secure_remove --file="$final_path"
-
-#=================================================
-# REMOVE APP MAIN DIR
-#=================================================
-ynh_script_progression --message="Removing dir directory..." --weight=1
-
-# Remove the app directory securely
-ynh_secure_remove --file="$datadir"
 
 #=================================================
 # REMOVE NGINX CONFIGURATION
