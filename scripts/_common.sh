@@ -5,7 +5,7 @@
 #=================================================
 
 # dependencies used by the app
-pkg_dependencies="sqlite3"
+pkg_dependencies=""
 
 #=================================================
 # PERSONAL HELPERS
