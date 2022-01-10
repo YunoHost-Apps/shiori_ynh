@@ -74,12 +74,12 @@ ynh_system_user_create --username=$app --home_dir="$final_path"
 #=================================================
 # CREATE A MYSQL DATABASE
 #=================================================
-# ynh_script_progression --message="Creating a MySQL database..." --weight=2
+ynh_script_progression --message="Creating a MySQL database..." --weight=2
 
-# db_name=$(ynh_sanitize_dbid --db_name=$app)
-# db_user=$db_name
-# ynh_app_setting_set --app=$app --key=db_name --value=$db_name
-# ynh_mysql_setup_db --db_user=$db_user --db_name=$db_name
+db_name=$(ynh_sanitize_dbid --db_name=$app)
+db_user=$db_name
+ynh_app_setting_set --app=$app --key=db_name --value=$db_name
+ynh_mysql_setup_db --db_user=$db_user --db_name=$db_name
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -158,7 +158,7 @@ yunohost service add $app --description="Simple bookmark manager" --log="/var/lo
 ynh_script_progression --message="Starting a systemd service..." --weight=1
 
 # Start a systemd service
-ynh_systemd_action --service_name=$app --action="start" --log_path="/var/log/$app/$app.log"
+ynh_systemd_action --service_name=$app --action="start" --log_path="systemd"
 
 #=================================================
 # SETUP SSOWAT
