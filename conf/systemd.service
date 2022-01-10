@@ -9,7 +9,6 @@ User=__APP__
 Group=__APP__
 WorkingDirectory=__FINALPATH__/
 ExecStart=__FINALPATH__/__APP__ serve --port __PORT__
-Environment="SHIORI_DIR=__DATADIR__"
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
 
