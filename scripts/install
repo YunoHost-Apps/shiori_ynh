@@ -118,16 +118,6 @@ chmod -R o-rwx "$datadir"
 chown -R $app:www-data "$datadir"
 
 #=================================================
-# ADD A CONFIGURATION
-#=================================================
-# ynh_script_progression --message="Adding a configuration file..." --time --weight=1
-
-# ynh_add_config --template="some_config_file" --destination="$final_path/some_config_file"
-
-# chmod 400 "$final_path/some_config_file"
-# chown $app:$app "$final_path/some_config_file"
-
-#=================================================
 # SETUP SYSTEMD
 #=================================================
 ynh_script_progression --message="Configuring a systemd service..." --weight=1
@@ -170,8 +160,6 @@ if [ $is_public -eq 1 ]
 then
 	ynh_permission_update --permission="main" --add="visitors"
 fi
-
-ynh_permission_create --permission="api" --url="/api" --allowed="visitors" --auth_header="false" --show_tile="false" --protected="true"
 
 #=================================================
 # RELOAD NGINX
