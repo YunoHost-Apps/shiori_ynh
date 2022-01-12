@@ -3,8 +3,8 @@
     "id": "shiori",
     "packaging_format": 1,
     "description": {
-        "en": "Simple bookmark manager built with Go",
-        "fr": "Simple bookmark manager built with Go"
+        "en": "Simple bookmark manager",
+        "fr": "Gestionnaire de liens simple"
     },
     "version": "1.5.0~ynh1",
     "url": "https://github.com/go-shiori/shiori",
@@ -18,13 +18,13 @@
     },
     "license": "MIT",
     "maintainer": {
-        "name": "John doe",
-        "email": "john.doe@example.com"
+        "name": "eric_G",
+        "email": ""
     },
     "requirements": {
         "yunohost": ">= 4.3.0"
     },
-    "multi_instance": false,
+    "multi_instance": true,
     "services": [
         "nginx"
     ],
