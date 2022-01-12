@@ -8,7 +8,7 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__FINALPATH__/
-ExecStart=__FINALPATH__/__APP__ serve --port __PORT__
+ExecStart=__FINALPATH__/shiori serve --port __PORT__
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
 
