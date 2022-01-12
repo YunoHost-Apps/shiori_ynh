@@ -34,7 +34,7 @@ datadir=$(ynh_app_setting_get --app=$app --key=datadir)
 #=================================================
 ynh_script_progression --message="Validating restoration parameters..." --weight=1
 
-test ! -d $final_path || ynh_die --message="There is already a directory: $final_path "
+test ! -d $final_path || ynh_die --message="There is already a directory: $final_path"
 
 #=================================================
 # STANDARD RESTORATION STEPS
@@ -63,6 +63,7 @@ ynh_restore_file --origin_path="$final_path"
 chmod 750 "$final_path"
 chmod -R o-rwx "$final_path"
 chown -R $app:www-data "$final_path"
+chmod +x "$final_path/shiori"
 
 #=================================================
 # RESTORE THE DATA DIRECTORY
