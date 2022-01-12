@@ -1,7 +1,6 @@
 [Unit]
 Description=Shiori: Simple bookmark manager
-Requires=network-online.target
-After=network-online.target
+Environment="SHIORI_DIR=__DATADIR__"
 
 [Service]
 Type=simple
@@ -9,9 +8,52 @@ User=__APP__
 Group=__APP__
 WorkingDirectory=__FINALPATH__/
 ExecStart=__FINALPATH__/shiori serve --port __PORT__
+Restart=always
+
 Environment="SHIORI_DIR=__DATADIR__"
-StandardOutput=append:/var/log/__APP__/__APP__.log
-StandardError=inherit
+DynamicUser=true
+PrivateUsers=true
+ProtectHome=true
+ProtectKernelLogs=true
+RestrictAddressFamilies=AF_INET AF_INET6
+StateDirectory=shiori
+SystemCallErrorNumber=EPERM
+SystemCallFilter=@system-service
+SystemCallFilter=~@chown
+SystemCallFilter=~@keyring
+SystemCallFilter=~@memlock
+SystemCallFilter=~@setuid
+DeviceAllow=
+
+CapabilityBoundingSet=
+LockPersonality=true
+MemoryDenyWriteExecute=true
+NoNewPrivileges=true
+PrivateDevices=true
+PrivateTmp=true
+ProtectControlGroups=true
+ProtectKernelTunables=true
+ProtectSystem=full
+ProtectClock=true
+ProtectKernelModules=true
+ProtectProc=noaccess
+ProtectHostname=true
+ProcSubset=pid
+RestrictNamespaces=true
+RestrictRealtime=true
+RestrictSUIDSGID=true
+SystemCallArchitectures=native
+SystemCallFilter=~@clock
+SystemCallFilter=~@debug
+SystemCallFilter=~@module
+SystemCallFilter=~@mount
+SystemCallFilter=~@raw-io
+SystemCallFilter=~@reboot
+SystemCallFilter=~@privileged
+SystemCallFilter=~@resources
+SystemCallFilter=~@cpu-emulation
+SystemCallFilter=~@obsolete
+UMask=0077
 
 [Install]
 WantedBy=multi-user.target
