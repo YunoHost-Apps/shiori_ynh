@@ -36,7 +36,7 @@ Shiori is a simple bookmarks manager written in Go language. Intended as a simpl
 
 ## Avertissements / informations importantes
 
-First connection credentials are:
+The default account is `shiori` with password `gopher`. It is removed once another 'owner' account is created.
 
 - username: `shiori`
 - password: `gopher`
