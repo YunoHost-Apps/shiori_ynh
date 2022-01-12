@@ -1,6 +1,7 @@
 [Unit]
 Description=Shiori: Simple bookmark manager
-Environment="SHIORI_DIR=__DATADIR__"
+Requires=network-online.target
+After=network-online.target
 
 [Service]
 Type=simple
