@@ -1,0 +1,6 @@
+SOURCE_URL=https://github.com/YunoHost-Apps/shiori_ynh/releases/download/v1.5.0/shiori
+SOURCE_SUM=c29696b47072e3a849d1f3c889839d4ac8aa918e83685f0a7137a1e8204d2a67
+SOURCE_SUM_PRG=sha256sum
+SOURCE_IN_SUBDIR=false
+SOURCE_FILENAME=shiori
+SOURCE_EXTRACT=false
