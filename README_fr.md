@@ -26,7 +26,7 @@ Shiori is a simple bookmarks manager written in Go language. Intended as a simpl
 
 [Shiori Web Extension](https://github.com/go-shiori/shiori-web-ext) is a simple extension for managing bookmarks using Shiori. This extension is intended to integrate Shiori with your favorite web browser. This way, you can save and remove bookmarks in Shiori without switching from your current page.
 
-**Version incluse :** 1.5.0~ynh2
+**Version incluse :** 1.5.0~ynh3
 
 **Démo :** https://demo.example.com
 
