@@ -5,7 +5,7 @@ It shall NOT be edited by hand.
 
 # Shiori for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/shiori.svg)](https://dash.yunohost.org/appci/app/shiori) ![](https://ci-apps.yunohost.org/ci/badges/shiori.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/shiori.maintain.svg)  
+[![Integration level](https://dash.yunohost.org/integration/shiori.svg)](https://dash.yunohost.org/appci/app/shiori) ![Working status](https://ci-apps.yunohost.org/ci/badges/shiori.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/shiori.maintain.svg)  
 [![Install Shiori with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=shiori)
 
 *[Lire ce readme en français.](./README_fr.md)*
@@ -30,13 +30,13 @@ Shiori is a simple bookmarks manager written in Go language. Intended as a simpl
 
 [Shiori Web Extension](https://github.com/go-shiori/shiori-web-ext) is a simple extension for managing bookmarks using Shiori. This extension is intended to integrate Shiori with your favorite web browser. This way, you can save and remove bookmarks in Shiori without switching from your current page.
 
-**Shipped version:** 1.5.0~ynh3
+**Shipped version:** 1.5.2~ynh1
 
 **Demo:** https://demo.example.com
 
 ## Screenshots
 
-![](./doc/screenshots/screenshot.png)
+![Screenshot of Shiori](./doc/screenshots/screenshot.png)
 
 ## Disclaimers / important information
 
@@ -47,22 +47,23 @@ The default account is `shiori` with password `gopher`. It is removed once anoth
 
 ## Documentation and resources
 
-* Official app website: https://github.com/go-shiori/shiori
-* Official user documentation: https://github.com/go-shiori/shiori/wiki/Usage
-* Official admin documentation: https://github.com/go-shiori/shiori/wiki
-* Upstream app code repository: https://github.com/go-shiori/shiori
-* YunoHost documentation for this app: https://yunohost.org/app_shiori
-* Report a bug: https://github.com/YunoHost-Apps/shiori_ynh/issues
+* Official app website: <https://github.com/go-shiori/shiori>
+* Official user documentation: <https://github.com/go-shiori/shiori/wiki/Usage>
+* Official admin documentation: <https://github.com/go-shiori/shiori/wiki>
+* Upstream app code repository: <https://github.com/go-shiori/shiori>
+* YunoHost documentation for this app: <https://yunohost.org/app_shiori>
+* Report a bug: <https://github.com/YunoHost-Apps/shiori_ynh/issues>
 
 ## Developer info
 
 Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/shiori_ynh/tree/testing).
 
 To try the testing branch, please proceed like that.
-```
+
+``` bash
 sudo yunohost app install https://github.com/YunoHost-Apps/shiori_ynh/tree/testing --debug
 or
 sudo yunohost app upgrade shiori -u https://github.com/YunoHost-Apps/shiori_ynh/tree/testing --debug
 ```
 
-**More info regarding app packaging:** https://yunohost.org/packaging_apps
+**More info regarding app packaging:** <https://yunohost.org/packaging_apps>
