@@ -11,7 +11,8 @@
 		setup_private=1
 		setup_public=1
 		upgrade=1
-		#upgrade=1	from_commit=CommitHash
+		#1.5.0~ynh3
+		upgrade=1	from_commit=5887398434a96643fba4598b6864d78f4d6505ce
 		backup_restore=1
 		multi_instance=1
 		change_url=1
@@ -19,6 +20,6 @@
 Email=
 Notification=none
 ;;; Upgrade options
-	; commit=CommitHash
-		name=Name and date of the commit.
+	; commit=5887398434a96643fba4598b6864d78f4d6505ce
+		name=Merge pull request #5 from YunoHost-Apps/testing 
 		manifest_arg=domain=DOMAIN&path=PATH&admin=USER&language=fr&is_public=1&password=pass&port=666&
