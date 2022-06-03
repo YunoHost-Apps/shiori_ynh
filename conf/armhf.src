@@ -1,6 +1,7 @@
-SOURCE_URL=https://github.com/YunoHost-Apps/shiori_ynh/releases/download/v1.5.0/shiori
-SOURCE_SUM=cbb32331153a97aa68fb1b2320ca6fe76924f939bcfae88d326a09af1372b0fe
+SOURCE_URL=https://github.com/go-shiori/shiori/releases/download/v1.5.2/shiori_1.5.2_Linux_armv7.tar.gz
+SOURCE_SUM=71482bc63850d9b74a4c18b72548f58f8c7e04dbfd95695058cc8da99f5f2bdf
 SOURCE_SUM_PRG=sha256sum
+SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=false
-SOURCE_FILENAME=shiori
-SOURCE_EXTRACT=false
+SOURCE_FILENAME=
+SOURCE_EXTRACT=true
