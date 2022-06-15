@@ -93,8 +93,10 @@ then
 
 	# Make a backup of the original Systemd file if modified
 	ynh_backup_if_checksum_is_different --file="$systemd_conf_path"
-
+	# Get value for systemd helper
 	datadir=$(ynh_app_setting_get --app=$app --key=datadir)
+	# Create systemd service
+	ynh_add_systemd_config
 fi
 
 # Change the domain for NGINX
