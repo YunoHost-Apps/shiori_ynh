@@ -6,7 +6,7 @@
         "en": "Simple bookmark manager",
         "fr": "Gestionnaire de liens simple"
     },
-    "version": "1.5.2~ynh1",
+    "version": "1.5.2~ynh2",
     "url": "https://github.com/go-shiori/shiori",
     "upstream": {
         "license": "MIT",
@@ -33,6 +33,12 @@
             {
                 "name": "domain",
                 "type": "domain"
+            },
+            {
+                "name": "path",
+                "type": "path",
+                "example": "/example",
+                "default": "/example"
             },
             {
                 "name": "is_public",
