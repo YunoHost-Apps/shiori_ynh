@@ -37,8 +37,8 @@
             {
                 "name": "path",
                 "type": "path",
-                "example": "/example",
-                "default": "/example"
+                "example": "/shiori",
+                "default": "/shiori"
             },
             {
                 "name": "is_public",
