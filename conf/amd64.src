@@ -1,5 +1,5 @@
-SOURCE_URL=https://github.com/go-shiori/shiori/releases/download/v1.5.2/shiori_1.5.2_Linux_x86_64.tar.gz
-SOURCE_SUM=f58973ecd77ee24074b31955ddac2a3518e305dba369943de7e4a267899cc136
+SOURCE_URL=https://github.com/go-shiori/shiori/releases/download/v1.5.3/shiori_1.5.3_Linux_x86_64.tar.gz
+SOURCE_SUM=0f54fc8af09c7228c2221f04432ed1c53414df9f9c9e613cf2a3219e9047b3f1
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=false
