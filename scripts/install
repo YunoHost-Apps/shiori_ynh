@@ -101,6 +101,15 @@ chmod -R o-rwx "$datadir"
 chown -R $app:www-data "$datadir"
 
 #=================================================
+# INSTALL THE SHIORI
+#=================================================
+ynh_script_progression --message="Migrate database..." --weight=10
+
+pushd $final_path
+	./shiori migrate
+popd
+
+#=================================================
 # SETUP SYSTEMD
 #=================================================
 ynh_script_progression --message="Configuring a systemd service..." --weight=1
