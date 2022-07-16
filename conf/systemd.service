@@ -8,8 +8,7 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__FINALPATH__/
-ExecStart=__FINALPATH__/shiori migrate
-ExecStart=__FINALPATH__/shiori serve --port __PORT__ --webroot __PATH__
+ExecStart=__FINALPATH__/shiori migrate __FINALPATH__/shiori serve --port __PORT__ --webroot __PATH__
 Restart=always
 Environment="SHIORI_DIR=__DATADIR__"
 
