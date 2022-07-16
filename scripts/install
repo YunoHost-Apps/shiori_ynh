@@ -103,11 +103,11 @@ chown -R $app:www-data "$datadir"
 #=================================================
 # MIGRATE DATABASE
 #=================================================
-# ynh_script_progression --message="Migrate database..." --weight=10
+ynh_script_progression --message="Migrate database..." --weight=10
 
-# pushd $final_path
-# 	./shiori migrate
-# popd
+pushd $final_path
+	./shiori migrate
+popd
 
 #=================================================
 # SETUP SYSTEMD
