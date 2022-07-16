@@ -77,6 +77,15 @@ chown -R $app:www-data "$final_path"
 chmod +x "$final_path/shiori"
 
 #=================================================
+# MIGRATE DATABASE
+#=================================================
+ynh_script_progression --message="Migrate database..." --weight=10
+
+# pushd $final_path
+# 	./shiori migrate
+# popd
+
+#=================================================
 # NGINX CONFIGURATION
 #=================================================
 ynh_script_progression --message="Upgrading NGINX web server configuration..." --weight=1
