@@ -100,6 +100,11 @@ chmod 750 "$datadir"
 chmod -R o-rwx "$datadir"
 chown -R $app:www-data "$datadir"
 
+# Run migrate for new install go-shiori/shiori#447
+pushd $final_path/
+	sudo -u $app final_path/shiori serve --port $port --webroot $path_url
+popd
+
 #=================================================
 # SETUP SYSTEMD
 #=================================================
