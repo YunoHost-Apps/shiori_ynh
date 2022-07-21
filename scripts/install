@@ -104,7 +104,7 @@ chown -R $app:www-data "$datadir"
 pushd $final_path/
 	sudo -u $app $final_path/shiori --portable migrate
 	sudo -u $app mv shiori-data/shiori.db $datadir
-	rm -r shiori-date
+	rm -r shiori-data
 popd
 
 #=================================================
