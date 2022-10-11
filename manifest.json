@@ -6,12 +6,11 @@
         "en": "Simple bookmark manager",
         "fr": "Gestionnaire de liens simple"
     },
-    "version": "1.5.3~ynh2",
+    "version": "1.5.3~ynh3",
     "url": "https://github.com/go-shiori/shiori",
     "upstream": {
         "license": "MIT",
         "website": "https://github.com/go-shiori/shiori",
-        "demo": "https://demo.example.com",
         "admindoc": "https://github.com/go-shiori/shiori/wiki",
         "userdoc": "https://github.com/go-shiori/shiori/wiki/Usage",
         "code": "https://github.com/go-shiori/shiori"
@@ -22,7 +21,7 @@
         "email": ""
     },
     "requirements": {
-        "yunohost": ">= 4.3.0"
+        "yunohost": ">= 11.0.9"
     },
     "multi_instance": true,
     "services": [
