@@ -101,11 +101,11 @@ chmod -R o-rwx "$datadir"
 chown -R $app:www-data "$datadir"
 
 # Run migrate for new install go-shiori/shiori#447
-pushd $final_path/
-	ynh_exec_as $app $final_path/shiori --portable migrate
-	ynh_exec_as $app mv shiori-data/shiori.db $datadir
-	ynh_secure_remove --file=$final_path/shiori-data
-popd
+#pushd $final_path/
+#	ynh_exec_as $app $final_path/shiori --portable migrate
+#	ynh_exec_as $app mv shiori-data/shiori.db $datadir
+#	ynh_secure_remove --file=$final_path/shiori-data
+#popd
 
 #=================================================
 # SETUP SYSTEMD
