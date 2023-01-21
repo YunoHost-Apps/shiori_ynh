@@ -5,15 +5,15 @@ It shall NOT be edited by hand.
 
 # Shiori pour YunoHost
 
-[![Niveau d'intégration](https://dash.yunohost.org/integration/shiori.svg)](https://dash.yunohost.org/appci/app/shiori) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/shiori.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/shiori.maintain.svg)  
+[![Niveau d’intégration](https://dash.yunohost.org/integration/shiori.svg)](https://dash.yunohost.org/appci/app/shiori) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/shiori.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/shiori.maintain.svg)  
 [![Installer Shiori avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=shiori)
 
 *[Read this readme in english.](./README.md)*
 
-> *Ce package vous permet d'installer Shiori rapidement et simplement sur un serveur YunoHost.
-Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l'installer et en profiter.*
+> *Ce package vous permet d’installer Shiori rapidement et simplement sur un serveur YunoHost.
+Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l’installer et en profiter.*
 
-## Vue d'ensemble
+## Vue d’ensemble
 
 Shiori is a simple bookmarks manager written in Go language. Intended as a simple clone of Pocket. You can use it as command line application or as web application. This application is distributed as a single binary, which means it can be installed and used easily.
 
@@ -26,15 +26,12 @@ Shiori is a simple bookmarks manager written in Go language. Intended as a simpl
 - Simple web interface for those who don't want to use a command line app.
 - Where possible, by default shiori will download a static copy of the webpage in simple text and HTML format, which later can be used as an offline archive for that page.
 
-### Shiori Web Extension
 
-[Shiori Web Extension](https://github.com/go-shiori/shiori-web-ext) is a simple extension for managing bookmarks using Shiori. This extension is intended to integrate Shiori with your favorite web browser. This way, you can save and remove bookmarks in Shiori without switching from your current page.
+**Version incluse :** 1.5.3~ynh5
 
-**Version incluse :** 1.5.3~ynh4
+## Captures d’écran
 
-## Captures d'écran
-
-![Capture d'écran de Shiori](./doc/screenshots/screenshot.png)
+![Capture d’écran de Shiori](./doc/screenshots/screenshot.png)
 
 ## Avertissements / informations importantes
 
@@ -45,12 +42,15 @@ The default account is `shiori` with password `gopher`. It is removed once anoth
 - username: `shiori`
 - password: `gopher`
 
+### Shiori Web Extension
+
+[Shiori Web Extension](https://github.com/go-shiori/shiori-web-ext) is a simple extension for managing bookmarks using Shiori. This extension is intended to integrate Shiori with your favorite web browser. This way, you can save and remove bookmarks in Shiori without switching from your current page.
+
 ## Documentations et ressources
 
-* Site officiel de l'app : <https://github.com/go-shiori/shiori>
 * Documentation officielle utilisateur : <https://github.com/go-shiori/shiori/wiki/Usage>
-* Documentation officielle de l'admin : <https://github.com/go-shiori/shiori/wiki>
-* Dépôt de code officiel de l'app : <https://github.com/go-shiori/shiori>
+* Documentation officielle de l’admin : <https://github.com/go-shiori/shiori/wiki>
+* Dépôt de code officiel de l’app : <https://github.com/go-shiori/shiori>
 * Documentation YunoHost pour cette app : <https://yunohost.org/app_shiori>
 * Signaler un bug : <https://github.com/YunoHost-Apps/shiori_ynh/issues>
 
@@ -66,4 +66,4 @@ ou
 sudo yunohost app upgrade shiori -u https://github.com/YunoHost-Apps/shiori_ynh/tree/testing --debug
 ```
 
-**Plus d'infos sur le packaging d'applications :** <https://yunohost.org/packaging_apps>
+**Plus d’infos sur le packaging d’applications :** <https://yunohost.org/packaging_apps>
