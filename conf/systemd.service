@@ -1,5 +1,5 @@
 [Unit]
-Description=Shiori: Simple bookmark manager
+Description=Shiori: simple bookmark manager
 Requires=network-online.target
 After=network-online.target
 
