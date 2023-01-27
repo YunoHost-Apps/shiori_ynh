@@ -5,7 +5,7 @@ It shall NOT be edited by hand.
 
 # Shiori pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/shiori.svg)](https://dash.yunohost.org/appci/app/shiori) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/shiori.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/shiori.maintain.svg)  
+[![Niveau d’intégration](https://dash.yunohost.org/integration/shiori.svg)](https://dash.yunohost.org/appci/app/shiori) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/shiori.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/shiori.maintain.svg)
 [![Installer Shiori avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=shiori)
 
 *[Read this readme in english.](./README.md)*
