@@ -35,7 +35,6 @@ Shiori is a simple bookmarks manager written in Go language. Intended as a simpl
 
 ## Documentations et ressources
 
-* Site officiel de l’app : <https://github.com/go-shiori/shiori>
 * Documentation officielle utilisateur : <https://github.com/go-shiori/shiori/wiki/Usage>
 * Documentation officielle de l’admin : <https://github.com/go-shiori/shiori/wiki>
 * Dépôt de code officiel de l’app : <https://github.com/go-shiori/shiori>
