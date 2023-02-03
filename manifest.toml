@@ -14,7 +14,6 @@ license = "MIT"
 admindoc = "https://github.com/go-shiori/shiori/wiki"
 userdoc = "https://github.com/go-shiori/shiori/wiki/Usage"
 code = "https://github.com/go-shiori/shiori"
-website = "https://github.com/go-shiori/shiori"
 
 [integration]
 yunohost = ">= 11.0.9"
@@ -44,6 +43,8 @@ ram.runtime = "50M"
     [resources.install_dir]
 
     [resources.data_dir]
+
+    [resources.ports]
 
     [resources.permissions]
     main.url = "/"
