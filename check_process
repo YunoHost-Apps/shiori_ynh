@@ -12,7 +12,7 @@
 		setup_public=1
 		upgrade=1
 		#1.5.0~ynh3
-		upgrade=1	from_commit=5887398434a96643fba4598b6864d78f4d6505ce
+		#upgrade=1	from_commit=5887398434a96643fba4598b6864d78f4d6505ce
 		backup_restore=1
 		multi_instance=1
 		change_url=1
