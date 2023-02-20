@@ -17,7 +17,7 @@ code = "https://github.com/go-shiori/shiori"
 
 [integration]
 yunohost = ">= 11.1.8"
-architectures = "all"
+architectures = ["amd64", "arm64", "armhf"]
 multi_instance = true
 ldap = "not_relevant"
 sso = "not_relevant"
