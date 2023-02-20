@@ -16,7 +16,7 @@ userdoc = "https://github.com/go-shiori/shiori/wiki/Usage"
 code = "https://github.com/go-shiori/shiori"
 
 [integration]
-yunohost = ">= 11.0.9"
+yunohost = ">= 11.1.8"
 architectures = "all"
 multi_instance = true
 ldap = "not_relevant"
@@ -48,3 +48,6 @@ ram.runtime = "50M"
 
     [resources.permissions]
     main.url = "/"
+
+    [resources.apt]
+    packages = "sqlite3"
