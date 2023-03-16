@@ -1,7 +1,0 @@
-SOURCE_URL=https://github.com/go-shiori/shiori/releases/download/v1.5.4/shiori_1.5.4_Linux_armv7.tar.gz
-SOURCE_SUM=193b0c999a23cd63c09731b9e3f3363e71e4ceaafa9172723060b5516e920409
-SOURCE_SUM_PRG=sha256sum
-SOURCE_FORMAT=tar.gz
-SOURCE_IN_SUBDIR=false
-SOURCE_FILENAME=
-SOURCE_EXTRACT=true
