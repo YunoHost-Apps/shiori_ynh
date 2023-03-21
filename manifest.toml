@@ -1,0 +1,65 @@
+packaging_format = 2
+
+id = "shiori"
+name = "Shiori"
+description.en = "Simple bookmark manager"
+description.fr = "Gestionnaire de liens simple"
+
+version = "1.5.3~ynh6"
+
+maintainers = ["eric_G"]
+
+[upstream]
+license = "MIT"
+admindoc = "https://github.com/go-shiori/shiori/wiki"
+userdoc = "https://github.com/go-shiori/shiori/wiki/Usage"
+code = "https://github.com/go-shiori/shiori"
+
+[integration]
+yunohost = ">= 11.1.15"
+architectures = ["amd64", "arm64", "armhf"]
+multi_instance = true
+ldap = false
+sso = false
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.path]
+    type = "path"
+    default = "/shiori"
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+[resources]
+
+    [resources.sources]
+    
+        [resources.sources.main]
+        amd64.url = "https://github.com/go-shiori/shiori/releases/download/v1.5.4/shiori_1.5.4_Linux_x86_64.tar.gz"
+        amd64.sha256 = "e7d4ca6d92b0c90a0ff3a54f3b124db6409eff6c43c153cc955d3dc42111bada"
+        arm64.url = "https://github.com/go-shiori/shiori/releases/download/v1.5.4/shiori_1.5.4_Linux_aarch64.tar.gz"
+        arm64.sha256 = "a0285089d20dee0e5860a6d134df88c61a7240eef233cd706e6217400f9c5121"
+        armhf.url = "https://github.com/go-shiori/shiori/releases/download/v1.5.4/shiori_1.5.4_Linux_armv7.tar.gz"
+        armhf.sha256 = "193b0c999a23cd63c09731b9e3f3363e71e4ceaafa9172723060b5516e920409"
+        in_subdir = false
+
+    [resources.ports]
+
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    [resources.data_dir]
+
+    [resources.permissions]
+    main.url = "/"
+
+    [resources.apt]
+    packages = "sqlite3"

@@ -6,6 +6,7 @@ It shall NOT be edited by hand.
 # Shiori pour YunoHost
 
 [![Niveau d’intégration](https://dash.yunohost.org/integration/shiori.svg)](https://dash.yunohost.org/appci/app/shiori) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/shiori.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/shiori.maintain.svg)
+
 [![Installer Shiori avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=shiori)
 
 *[Read this readme in english.](./README.md)*
@@ -32,19 +33,6 @@ Shiori is a simple bookmarks manager written in Go language. Intended as a simpl
 ## Captures d’écran
 
 ![Capture d’écran de Shiori](./doc/screenshots/screenshot.png)
-
-## Avertissements / informations importantes
-
-### First log in
-
-The default account is `shiori` with password `gopher`. It is removed once another 'owner' account is created.
-
-- username: `shiori`
-- password: `gopher`
-
-### Shiori Web Extension
-
-[Shiori Web Extension](https://github.com/go-shiori/shiori-web-ext) is a simple extension for managing bookmarks using Shiori. This extension is intended to integrate Shiori with your favorite web browser. This way, you can save and remove bookmarks in Shiori without switching from your current page.
 
 ## Documentations et ressources
 
