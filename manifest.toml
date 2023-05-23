@@ -5,7 +5,7 @@ name = "Shiori"
 description.en = "Simple bookmark manager"
 description.fr = "Gestionnaire de liens simple"
 
-version = "1.5.3~ynh6"
+version = "1.5.3~ynh7"
 
 maintainers = ["eric_G"]
 
