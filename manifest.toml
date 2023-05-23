@@ -5,7 +5,7 @@ name = "Shiori"
 description.en = "Simple bookmark manager"
 description.fr = "Gestionnaire de liens simple"
 
-version = "1.5.3~ynh6"
+version = "1.5.3~ynh7"
 
 maintainers = ["eric_G"]
 
@@ -16,7 +16,7 @@ userdoc = "https://github.com/go-shiori/shiori/wiki/Usage"
 code = "https://github.com/go-shiori/shiori"
 
 [integration]
-yunohost = ">= 11.1.15"
+yunohost = ">= 11.1.19"
 architectures = ["amd64", "arm64", "armhf"]
 multi_instance = true
 ldap = false
@@ -49,6 +49,11 @@ ram.runtime = "50M"
         armhf.url = "https://github.com/go-shiori/shiori/releases/download/v1.5.4/shiori_1.5.4_Linux_armv7.tar.gz"
         armhf.sha256 = "193b0c999a23cd63c09731b9e3f3363e71e4ceaafa9172723060b5516e920409"
         in_subdir = false
+
+        autoupdate.strategy = "latest_github_release"
+        autoupdate.asset.amd64 = "^*Linux_x86_64$"
+        autoupdate.asset.arm64 = "^*Linux_aarch64$"
+        autoupdate.asset.armhf = "^*Linux_armv7$"
 
     [resources.ports]
 
