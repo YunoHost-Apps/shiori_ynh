@@ -5,7 +5,7 @@ name = "Shiori"
 description.en = "Simple bookmark manager"
 description.fr = "Gestionnaire de liens simple"
 
-version = "1.5.3~ynh7"
+version = "1.5.4~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -51,9 +51,9 @@ ram.runtime = "50M"
         in_subdir = false
 
         autoupdate.strategy = "latest_github_release"
-        autoupdate.asset.amd64 = "^shiori_*_Linux_x86_64$"
-        autoupdate.asset.arm64 = "^shiori_*_Linux_aarch64$"
-        autoupdate.asset.armhf = "^shiori_*_Linux_armv7$"
+        autoupdate.asset.amd64 = "^shiori_.*_Linux_x86_64.tar.gz$"
+        autoupdate.asset.arm64 = "^shiori_.*_Linux_aarch64.tar.gz$"
+        autoupdate.asset.armhf = "^shiori_.*_Linux_armv7.tar.gz$"
 
     [resources.ports]
 
