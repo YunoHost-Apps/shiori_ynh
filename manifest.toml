@@ -5,7 +5,7 @@ name = "Shiori"
 description.en = "Simple bookmark manager"
 description.fr = "Gestionnaire de liens simple"
 
-version = "1.5.3~ynh7"
+version = "1.5.5~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -16,7 +16,7 @@ userdoc = "https://github.com/go-shiori/shiori/wiki/Usage"
 code = "https://github.com/go-shiori/shiori"
 
 [integration]
-yunohost = ">= 11.1.19"
+yunohost = ">= 11.1.21"
 architectures = ["amd64", "arm64", "armhf"]
 multi_instance = true
 ldap = false
@@ -42,18 +42,17 @@ ram.runtime = "50M"
     [resources.sources]
     
         [resources.sources.main]
-        amd64.url = "https://github.com/go-shiori/shiori/releases/download/v1.5.4/shiori_1.5.4_Linux_x86_64.tar.gz"
-        amd64.sha256 = "e7d4ca6d92b0c90a0ff3a54f3b124db6409eff6c43c153cc955d3dc42111bada"
-        arm64.url = "https://github.com/go-shiori/shiori/releases/download/v1.5.4/shiori_1.5.4_Linux_aarch64.tar.gz"
-        arm64.sha256 = "a0285089d20dee0e5860a6d134df88c61a7240eef233cd706e6217400f9c5121"
-        armhf.url = "https://github.com/go-shiori/shiori/releases/download/v1.5.4/shiori_1.5.4_Linux_armv7.tar.gz"
-        armhf.sha256 = "193b0c999a23cd63c09731b9e3f3363e71e4ceaafa9172723060b5516e920409"
+        amd64.url = "https://github.com/go-shiori/shiori/releases/download/v1.5.5-rc.2/shiori_Linux_x86_64.tar.gz"
+        amd64.sha256 = "928adfc3d927b718c7bd75396bbb3a34cb542676374b6c89bb3da92063ac099c"
+        arm64.url = "https://github.com/go-shiori/shiori/releases/download/v1.5.5-rc.2/shiori_Linux_aarch64.tar.gz"
+        arm64.sha256 = "98fc7c8114264b338838089a6ab7c4ce326224fac4f498b6ecc4bfab2d3d3c78"
+        armhf.url = "https://github.com/go-shiori/shiori/releases/download/v1.5.5-rc.2/shiori_Linux_arm.tar.gz"
+        armhf.sha256 = "3ac24d434ff7a76bb3a8810e6c23caf28a7040c67756fec99a2483f04a197f77"
         in_subdir = false
-
         autoupdate.strategy = "latest_github_release"
-        autoupdate.asset.amd64 = "^*Linux_x86_64$"
-        autoupdate.asset.arm64 = "^*Linux_aarch64$"
-        autoupdate.asset.armhf = "^*Linux_armv7$"
+        #autoupdate.asset.amd64 = "^shiori_.*_Linux_x86_64.tar.gz$"
+        #autoupdate.asset.arm64 = "^shiori_.*_Linux_aarch64.tar.gz$"
+        #autoupdate.asset.armhf = "^shiori_.*_Linux_armv7.tar.gz$"
 
     [resources.ports]
 
