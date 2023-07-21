@@ -8,7 +8,7 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=__INSTALL_DIR__/shiori serve --port __PORT__ --webroot __PATH__/
+ExecStart=__INSTALL_DIR__/shiori serve --port __PORT__ --webroot __PATH__
 Restart=always
 Environment="SHIORI_DIR=__DATA_DIR__"
 
