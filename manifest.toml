@@ -16,7 +16,7 @@ userdoc = "https://github.com/go-shiori/shiori/wiki/Usage"
 code = "https://github.com/go-shiori/shiori"
 
 [integration]
-yunohost = ">= 11.1.21"
+yunohost = ">= 11.2"
 architectures = ["amd64", "arm64", "armhf"]
 multi_instance = true
 ldap = false
