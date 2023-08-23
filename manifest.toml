@@ -64,6 +64,9 @@ ram.runtime = "50M"
 
     [resources.permissions]
     main.url = "/"
+    api.url = "/api"
+    api.allowed = "visitors"
+    api.auth_header = false
 
     [resources.apt]
     packages = "sqlite3"
