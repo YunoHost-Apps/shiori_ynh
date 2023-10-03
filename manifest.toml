@@ -69,4 +69,8 @@ ram.runtime = "50M"
     api.auth_header = false
 
     [resources.apt]
-    packages = "sqlite3"
+    packages = "postgresql"
+   
+    [resources.database]
+    type = "postgresql"
+    
