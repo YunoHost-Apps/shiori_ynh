@@ -39,7 +39,6 @@ Shiori est un simple gestionnaire de signets écrit en langage Go. Conçu comme 
 * Documentation officielle utilisateur : <https://github.com/go-shiori/shiori/wiki/Usage>
 * Documentation officielle de l’admin : <https://github.com/go-shiori/shiori/wiki>
 * Dépôt de code officiel de l’app : <https://github.com/go-shiori/shiori>
-* Documentation YunoHost pour cette app : <https://yunohost.org/app_shiori>
 * Signaler un bug : <https://github.com/YunoHost-Apps/shiori_ynh/issues>
 
 ## Informations pour les développeurs
