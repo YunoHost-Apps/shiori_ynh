@@ -5,7 +5,7 @@ name = "Shiori"
 description.en = "Simple bookmark manager"
 description.fr = "Gestionnaire de liens simple"
 
-version = "1.5.5~ynh3"
+version = "1.5.5~ynh4"
 
 maintainers = ["eric_G"]
 
@@ -19,8 +19,11 @@ code = "https://github.com/go-shiori/shiori"
 yunohost = ">= 11.2"
 architectures = ["amd64", "arm64", "armhf"]
 multi_instance = true
+
 ldap = false
+
 sso = false
+
 disk = "50M"
 ram.build = "50M"
 ram.runtime = "50M"

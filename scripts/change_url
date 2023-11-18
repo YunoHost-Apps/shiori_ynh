@@ -26,6 +26,14 @@ ynh_script_progression --message="Updating NGINX web server configuration..." --
 ynh_change_url_nginx_config
 
 #=================================================
+# SPECIFIC MODIFICATIONS
+#=================================================
+ynh_script_progression --message="Updating systemd service..." --weight=1
+
+ynh_replace_string --match_string="--webroot $old_path" --replace_string="--webroot $new_path" --target_file="/etc/systemd/system/$app.service"
+systemctl daemon-reload
+
+#=================================================
 # GENERIC FINALISATION
 #=================================================
 # START SYSTEMD SERVICE
