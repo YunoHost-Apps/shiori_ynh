@@ -7,7 +7,7 @@ description.fr = "Gestionnaire de liens simple"
 
 version = "1.5.5~ynh4"
 
-maintainers = ["eric_G"]
+maintainers = []
 
 [upstream]
 license = "MIT"
