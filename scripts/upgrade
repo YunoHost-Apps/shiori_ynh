@@ -46,7 +46,7 @@ chmod +x "$install_dir/shiori"
 
 if [ "$upgrade_type" == "UPGRADE_APP" ]
 then
-	if ynh_compare_current_pacakge_version --comparison lt --version 1.50~ynh9
+	if ynh_compare_current_package_version --comparison lt --version 1.50~ynh9
 	then
 		ynh_script_progression --message="Migrating sqlite from version < 1.50~ynh9..." --weight=1
 		FTS4_EXISTS=$(sqlite3 "$data_dir/shiori.db" "SELECT sql FROM sqlite_master WHERE type = 'table' AND name = 'bookmark_content' AND sql LIKE '%USING fts4%';")
