@@ -1,1 +1,1 @@
-The default account is `shiori` with password `gopher`. It is removed once another 'owner' account is created.
+The default account is `shiori` with password `gopher`. Please manually remove it after you create your own account.
