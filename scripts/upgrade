@@ -41,6 +41,39 @@ chown -R $app:www-data "$install_dir"
 chmod +x "$install_dir/shiori"
 
 #=================================================
+# MIGRATE AND UPGRADE
+#=================================================
+
+if [ "$upgrade_type" == "UPGRADE_APP" ]
+then
+	if ynh_compare_current_pacakge_version --comparison lt --version 1.50~ynh9
+	then
+		ynh_script_progression --message="Migrating sqlite from version < 1.50~ynh9..." --weight=1
+		FTS4_EXISTS=$(sqlite3 "$data_dir/shiori.db" "SELECT sql FROM sqlite_master WHERE type = 'table' AND name = 'bookmark_content' AND sql LIKE '%USING fts4%';")
+		if [ -z "$FTS4_EXISTS" ]
+		then
+			echo "No  FTS4 table found or already migrated"
+		else
+			sqlite3 "$data_dir/shiori.db" "BEGIN TRANSACTION; CREATE VIRTUAL TABLE bookmark_content_fts5 USING fts5(title, content, html, docid); INSERT INTO bookmark_content_fts5 (title, content, html, docid) SELECT title, content, html, docid FROM bookmark_content; DROP TABLE bookmark_content; ALTER TABLE bookmark_content_fts5 RENAME TO bookmark_content; COMMIT;"
+		fi
+
+		SCHEMA_MIGRATIONS_EXISTS=$(sqlite3 "$data_dir/shiori.db"  "SELECT name FROM sqlite_master WHERE type='table' AND name='schema_migrations';")
+		if [ -z "$SCHEMA_MIGRATIONS_EXISTS" ]; then
+			echo "No schema_migrations table found, skipping"
+		else
+			DIRTY=$(sqlite3 "$data_dir/shiori.db" "SELECT dirty FROM schema_migrations WHERE dirty = 1;")
+			if [ -z "$DIRTY" ]; then
+				echo "No dirty migrations found, skipping"
+			else
+				VERSION=$(sqlite3 "$data_dir/shiori.db" "SELECT version FROM schema_migrations WHERE dirty = 1;")
+				NEW_VERSION=$((VERSION - 1))
+				sqlite3 "$data_dir/shiori.db" "UPDATE schema_migrations SET version = $NEW_VERSION, dirty = 0 WHERE dirty = 1;"
+			fi
+		fi
+	fi
+fi
+
+#=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
 #=================================================
 ynh_script_progression --message="Upgrading system configurations related to $app..." --weight=1
