@@ -9,7 +9,7 @@ It shall NOT be edited by hand.
 
 [![Install Shiori with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=shiori)
 
-*[Read this README is other languages.](./ALL_README.md)*
+*[Read this README in other languages.](./ALL_README.md)*
 
 > *This package allows you to install Shiori quickly and simply on a YunoHost server.*  
 > *If you don't have YunoHost, please consult [the guide](https://yunohost.org/install) to learn how to install it.*
@@ -28,7 +28,7 @@ Shiori is a simple bookmarks manager written in Go language. Intended as a simpl
 - Where possible, by default shiori will download a static copy of the webpage in simple text and HTML format, which later can be used as an offline archive for that page.
 
 
-**Shipped version:** 1.5.5~ynh4
+**Shipped version:** 1.6.1~ynh1
 
 ## Screenshots
 

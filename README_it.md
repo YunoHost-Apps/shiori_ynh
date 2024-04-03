@@ -28,7 +28,7 @@ Shiori is a simple bookmarks manager written in Go language. Intended as a simpl
 - Where possible, by default shiori will download a static copy of the webpage in simple text and HTML format, which later can be used as an offline archive for that page.
 
 
-**Versione pubblicata:** 1.5.5~ynh4
+**Versione pubblicata:** 1.6.1~ynh1
 
 ## Screenshot
 

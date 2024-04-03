@@ -28,7 +28,7 @@ Shiori est un simple gestionnaire de signets écrit en langage Go. Conçu comme 
 - Dans la mesure du possible, shiori téléchargera par défaut une copie statique de la page Web au format texte simple et HTML, qui pourra ensuite être utilisée comme archive hors ligne pour cette page.
 
 
-**Version incluse :** 1.5.5~ynh4
+**Version incluse :** 1.6.1~ynh1
 
 ## Captures d’écran
 
