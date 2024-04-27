@@ -5,7 +5,7 @@ name = "Shiori"
 description.en = "Simple bookmark manager"
 description.fr = "Gestionnaire de liens simple"
 
-version = "1.6.2~ynh1"
+version = "1.6.3~ynh1"
 
 maintainers = []
 
@@ -45,12 +45,12 @@ ram.runtime = "50M"
     [resources.sources]
     
         [resources.sources.main]
-        amd64.url = "https://github.com/go-shiori/shiori/releases/download/v1.6.2/shiori_Linux_x86_64.tar.gz"
-        amd64.sha256 = "cc707b8edf4966240f3e7e601f20e77f1fb463b932d75334df0f17aabcac0087"
-        arm64.url = "https://github.com/go-shiori/shiori/releases/download/v1.6.2/shiori_Linux_aarch64.tar.gz"
-        arm64.sha256 = "fb294eaf4078983a789928bed5f3aadd3690237591356728fc191e76aa2df2f2"
-        armhf.url = "https://github.com/go-shiori/shiori/releases/download/v1.6.2/shiori_Linux_arm.tar.gz"
-        armhf.sha256 = "6a5ebb2f418073ce826384a3be299377ebcae7412c6abbbded05be1c9247dee5"
+        amd64.url = "https://github.com/go-shiori/shiori/releases/download/v1.6.3/shiori_Linux_x86_64.tar.gz"
+        amd64.sha256 = "d352bd0c851c7aab89225cfc730e76b5bd5d7faa92a05c71f51b46af0c46b7fc"
+        arm64.url = "https://github.com/go-shiori/shiori/releases/download/v1.6.3/shiori_Linux_aarch64.tar.gz"
+        arm64.sha256 = "688ddac88c3dc150f2ef3e7a34298689c63d5f09971e3aed3a0cca289c273bec"
+        armhf.url = "https://github.com/go-shiori/shiori/releases/download/v1.6.3/shiori_Linux_arm.tar.gz"
+        armhf.sha256 = "f9e15372775d9211b01ab5ee22c53daad4508bab9650f16902d9ea08b9f0a2ea"
         in_subdir = false
         autoupdate.strategy = "latest_github_release"
         autoupdate.asset.amd64 = "^shiori_Linux_x86_64.tar.gz$"
