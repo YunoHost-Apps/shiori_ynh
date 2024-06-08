@@ -3,7 +3,7 @@
 请勿手动编辑。
 -->
 
-# YunoHost 的 Shiori
+# YunoHost 上的 Shiori
 
 [![集成程度](https://dash.yunohost.org/integration/shiori.svg)](https://dash.yunohost.org/appci/app/shiori) ![工作状态](https://ci-apps.yunohost.org/ci/badges/shiori.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/shiori.maintain.svg)
 
