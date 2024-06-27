@@ -55,7 +55,7 @@ ram.runtime = "50M"
         autoupdate.strategy = "latest_github_release"
         autoupdate.asset.amd64 = "^shiori_Linux_x86_64_.*.tar.gz$"
         autoupdate.asset.arm64 = "^shiori_Linux_aarch64_.*.tar.gz$"
-        autoupdate.asset.armhf = "^shiori_Linux_arm.tar_.*.gz$"
+        autoupdate.asset.armhf = "^shiori_Linux_arm_.*.tar.gz$"
 
     [resources.ports]
 
