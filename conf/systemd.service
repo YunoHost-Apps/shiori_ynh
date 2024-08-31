@@ -11,6 +11,7 @@ WorkingDirectory=__INSTALL_DIR__/
 ExecStart=__INSTALL_DIR__/shiori server --port __PORT__ --webroot __PATH__
 Restart=always
 Environment="SHIORI_DIR=__DATA_DIR__"
+Environment="SHIORI_HTTP_SECRET_KEY=__KEY__"
 
 [Install]
 WantedBy=multi-user.target
