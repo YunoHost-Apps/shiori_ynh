@@ -36,7 +36,6 @@ yunohost service add $app --description="Simple bookmark manager" --log="/var/lo
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
-# Start a systemd service
 ynh_systemctl --service=$app --action="start" --log_path="systemd"
 
 #=================================================
