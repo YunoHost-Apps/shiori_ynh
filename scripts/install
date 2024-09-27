@@ -3,6 +3,9 @@
 source _common.sh
 source /usr/share/yunohost/helpers
 
+key=$(ynh_string_random --length=45 | base64)
+ynh_app_setting_set --app=$app --key=key --value=$key
+
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
@@ -33,7 +36,6 @@ yunohost service add $app --description="Simple bookmark manager" --log="/var/lo
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
-# Start a systemd service
 ynh_systemctl --service=$app --action="start" --log_path="systemd"
 
 #=================================================
