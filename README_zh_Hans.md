@@ -5,7 +5,9 @@
 
 # YunoHost 上的 Shiori
 
-[![集成程度](https://dash.yunohost.org/integration/shiori.svg)](https://ci-apps.yunohost.org/ci/apps/shiori/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/shiori.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/shiori.maintain.svg)
+[![集成程度](https://apps.yunohost.org/badge/integration/shiori)](https://ci-apps.yunohost.org/ci/apps/shiori/)
+![工作状态](https://apps.yunohost.org/badge/state/shiori)
+![维护状态](https://apps.yunohost.org/badge/maintained/shiori)
 
 [![使用 YunoHost 安装 Shiori](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=shiori)
 

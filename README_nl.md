@@ -5,7 +5,9 @@ Hij mag NIET handmatig aangepast worden.
 
 # Shiori voor Yunohost
 
-[![Integratieniveau](https://dash.yunohost.org/integration/shiori.svg)](https://ci-apps.yunohost.org/ci/apps/shiori/) ![Mate van functioneren](https://ci-apps.yunohost.org/ci/badges/shiori.status.svg) ![Onderhoudsstatus](https://ci-apps.yunohost.org/ci/badges/shiori.maintain.svg)
+[![Integratieniveau](https://apps.yunohost.org/badge/integration/shiori)](https://ci-apps.yunohost.org/ci/apps/shiori/)
+![Mate van functioneren](https://apps.yunohost.org/badge/state/shiori)
+![Onderhoudsstatus](https://apps.yunohost.org/badge/maintained/shiori)
 
 [![Shiori met Yunohost installeren](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=shiori)
 

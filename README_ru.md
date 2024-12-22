@@ -5,7 +5,9 @@
 
 # Shiori для YunoHost
 
-[![Уровень интеграции](https://dash.yunohost.org/integration/shiori.svg)](https://ci-apps.yunohost.org/ci/apps/shiori/) ![Состояние работы](https://ci-apps.yunohost.org/ci/badges/shiori.status.svg) ![Состояние сопровождения](https://ci-apps.yunohost.org/ci/badges/shiori.maintain.svg)
+[![Уровень интеграции](https://apps.yunohost.org/badge/integration/shiori)](https://ci-apps.yunohost.org/ci/apps/shiori/)
+![Состояние работы](https://apps.yunohost.org/badge/state/shiori)
+![Состояние сопровождения](https://apps.yunohost.org/badge/maintained/shiori)
 
 [![Установите Shiori с YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=shiori)
 
