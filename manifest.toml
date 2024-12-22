@@ -16,13 +16,12 @@ userdoc = "https://github.com/go-shiori/shiori/wiki/Usage"
 code = "https://github.com/go-shiori/shiori"
 
 [integration]
-yunohost = ">= 11.2.30"
+yunohost = ">= 12.0.9"
 helpers_version = "2.1"
 architectures = ["amd64", "arm64", "armhf"]
 multi_instance = true
 
 ldap = false
-
 sso = false
 
 disk = "50M"
