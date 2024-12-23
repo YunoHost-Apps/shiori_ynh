@@ -5,7 +5,9 @@ Ini TIDAK boleh diedit dengan tangan.
 
 # Shiori untuk YunoHost
 
-[![Tingkat integrasi](https://dash.yunohost.org/integration/shiori.svg)](https://ci-apps.yunohost.org/ci/apps/shiori/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/shiori.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/shiori.maintain.svg)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/shiori)](https://ci-apps.yunohost.org/ci/apps/shiori/)
+![Status kerja](https://apps.yunohost.org/badge/state/shiori)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/shiori)
 
 [![Pasang Shiori dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=shiori)
 
@@ -28,7 +30,7 @@ Shiori is a simple bookmarks manager written in Go language. Intended as a simpl
 - Where possible, by default shiori will download a static copy of the webpage in simple text and HTML format, which later can be used as an offline archive for that page.
 
 
-**Versi terkirim:** 1.7.1~ynh1
+**Versi terkirim:** 1.7.2~ynh1
 
 ## Tangkapan Layar
 

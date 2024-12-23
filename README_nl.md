@@ -5,7 +5,9 @@ Hij mag NIET handmatig aangepast worden.
 
 # Shiori voor Yunohost
 
-[![Integratieniveau](https://dash.yunohost.org/integration/shiori.svg)](https://ci-apps.yunohost.org/ci/apps/shiori/) ![Mate van functioneren](https://ci-apps.yunohost.org/ci/badges/shiori.status.svg) ![Onderhoudsstatus](https://ci-apps.yunohost.org/ci/badges/shiori.maintain.svg)
+[![Integratieniveau](https://apps.yunohost.org/badge/integration/shiori)](https://ci-apps.yunohost.org/ci/apps/shiori/)
+![Mate van functioneren](https://apps.yunohost.org/badge/state/shiori)
+![Onderhoudsstatus](https://apps.yunohost.org/badge/maintained/shiori)
 
 [![Shiori met Yunohost installeren](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=shiori)
 
@@ -28,7 +30,7 @@ Shiori is a simple bookmarks manager written in Go language. Intended as a simpl
 - Where possible, by default shiori will download a static copy of the webpage in simple text and HTML format, which later can be used as an offline archive for that page.
 
 
-**Geleverde versie:** 1.7.1~ynh1
+**Geleverde versie:** 1.7.2~ynh1
 
 ## Schermafdrukken
 

@@ -5,7 +5,9 @@ Il NE doit PAS être modifié à la main.
 
 # Shiori pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/shiori.svg)](https://ci-apps.yunohost.org/ci/apps/shiori/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/shiori.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/shiori.maintain.svg)
+[![Niveau d’intégration](https://apps.yunohost.org/badge/integration/shiori)](https://ci-apps.yunohost.org/ci/apps/shiori/)
+![Statut du fonctionnement](https://apps.yunohost.org/badge/state/shiori)
+![Statut de maintenance](https://apps.yunohost.org/badge/maintained/shiori)
 
 [![Installer Shiori avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=shiori)
 
@@ -28,7 +30,7 @@ Shiori est un simple gestionnaire de signets écrit en langage Go. Conçu comme 
 - Dans la mesure du possible, shiori téléchargera par défaut une copie statique de la page Web au format texte simple et HTML, qui pourra ensuite être utilisée comme archive hors ligne pour cette page.
 
 
-**Version incluse :** 1.7.1~ynh1
+**Version incluse :** 1.7.2~ynh1
 
 ## Captures d’écran
 
