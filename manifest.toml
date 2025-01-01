@@ -70,6 +70,7 @@ ram.runtime = "50M"
     api.url = "/api"
     api.allowed = "visitors"
     api.auth_header = false
+    show_tile = false
 
     [resources.apt]
     packages = "sqlite3"
