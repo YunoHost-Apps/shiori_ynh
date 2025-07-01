@@ -9,7 +9,7 @@ User=__APP__
 Group=__APP__
 EnvironmentFile=__INSTALL_DIR__/.env
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=__INSTALL_DIR__/shiori server --port __PORT__ --webroot __PATH__
+ExecStart=__INSTALL_DIR__/shiori server
 Restart=always
 
 ### Depending on specificities of your service/app, you may need to tweak these
