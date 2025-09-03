@@ -1,6 +1,5 @@
 #!/bin/bash
 
-source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
@@ -15,6 +14,8 @@ ynh_systemctl --service=$app --action="stop" --log_path="systemd"
 #=================================================
 ynh_script_progression "Ensuring downward compatibility..."
 
+ynh_app_setting_set --key=protect_against_basic_auth_spoofing --value=false
+
 ynh_app_setting_set_default --key=key --value="$(ynh_string_random --length=45 | base64)"
 
 #=================================================
@@ -22,9 +23,16 @@ ynh_app_setting_set_default --key=key --value="$(ynh_string_random --length=45 |
 #=================================================
 ynh_script_progression "Upgrading source files..."
 
-ynh_setup_source --dest_dir="$install_dir"
+ynh_setup_source --dest_dir="$install_dir" --keep=".env"
 
 chmod +x "$install_dir/shiori"
+
+#=================================================
+# UPDATE A CONFIG FILE
+#=================================================
+ynh_script_progression "Updating $app's configuration files..."
+
+ynh_config_add --template=".env" --destination="$install_dir/.env"
 
 #=================================================
 # MIGRATE AND UPGRADE
