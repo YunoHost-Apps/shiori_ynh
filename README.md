@@ -17,6 +17,7 @@ Simple bookmark manager
 <a href="https://github.com/YunoHost-Apps/shiori_ynh/issues"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_report_an_issue.svg"/></a>
 </div>
 
+
 ## Screenshots
 ![Screenshot of Shiori](./doc/screenshots/screenshot.png)
 
